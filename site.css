@@ -26,16 +26,17 @@ body {
     font-family: "Gill Sans", sans-serif;
     font-size: 16px;
     background-color: #000000;
-    color: #2e3130;
+    color: #dddddd;
     padding: 3px;
     height: 100%;
 }
 
-.light {
-    padding: 5px;
-    padding-left:  15px;
-    padding-right: 15px;
-    background-color: #ffffff;
+.wht {
+  padding: 60px;
+  padding-left:  100px;
+  padding-right: 100px;
+  background-color: #ffffff;
+  color: #2e3130
 }
 
 object {
@@ -48,7 +49,7 @@ h1 {
     font-family: "Gill Sans", sans-serif;
     border-bottom: 3px solid #089659;
     color: #077f4d;
-    font-size: 30px;
+    font-size: 48px;
 }
 
 ul#menu {
@@ -83,21 +84,16 @@ ul#menu li a:hover {
 
 /* =================================================== */
 
-.dark {
-  padding: 50px;
+.grn {
+  padding: 60px;
   padding-left:  100px;
   padding-right: 100px;
   background-color : #073824
 }
 
-.dark h2 {
-  color : #dddddd
-}
-
-.dark h3 {
-  color : #dddddd
-}
-
-.dark p {
-  color : #dddddd;
+.red {
+  padding: 60px;
+  padding-left:  100px;
+  padding-right: 100px;
+  background-color : #3E1007
 }
