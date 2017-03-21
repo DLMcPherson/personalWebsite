@@ -25,18 +25,17 @@ a:active {
 body {
     font-family: "Gill Sans", sans-serif;
     font-size: 16px;
-    background-color: #212724; 
+    background-color: #000000;
     color: #2e3130;
     padding: 3px;
     height: 100%;
 }
 
-#main {
+.light {
     padding: 5px;
     padding-left:  15px;
     padding-right: 15px;
     background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
 }
 
 object {
@@ -45,7 +44,8 @@ object {
 }
 
 h1 {
-    font-family: Palatino, serif;
+    /*font-family: Palatino, serif;*/
+    font-family: "Gill Sans", sans-serif;
     border-bottom: 3px solid #089659;
     color: #077f4d;
     font-size: 30px;
@@ -74,9 +74,30 @@ ul#menu li a:hover {
     background-color: black;
 }
 
-#container { 
-    overflow: auto; 
-    -webkit-overflow-scrolling: touch; 
+#container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     height: 100%;
     width: 100%;
+}
+
+/* =================================================== */
+
+.dark {
+  padding: 50px;
+  padding-left:  100px;
+  padding-right: 100px;
+  background-color : #073824
+}
+
+.dark h2 {
+  color : #dddddd
+}
+
+.dark h3 {
+  color : #dddddd
+}
+
+.dark p {
+  color : #dddddd;
 }

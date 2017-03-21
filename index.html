@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>David McPherson - Collaboration for Robots</title>
+  <title>David McPherson + Robot Collaboration</title>
   <link href="site.css" rel="stylesheet">
 </head>
 
@@ -10,10 +10,8 @@
 
 <body>
 
-  <div id="main">
+  <div class="light">
   <h1>David L. McPherson</h1>
-
-  <img src="Science David25.jpg" alt="selfie" style="width:50%;" align="right" hspace="20" vspace="20">
 
   <h2>About me</h2>
   <p>Top of the day to you!
@@ -32,21 +30,29 @@
     Although this means I don't accomplish as much on any one project, this breadth of labwork will afford powerful diversity in knowledge and allow me to puruse collaborative projects between the different labs.
     I'm excited to be working with the <a href="http://hybrid.eecs.berkeley.edu">Hybrid Systems Lab</a> this semester.</p>
 
-  <h2>Current projects</h2>
+  </div>
+  <div class = "dark">
+    <h2>Current projects</h2>
 
-  <h3>Probabilistic Reachability and Maximal Safe Sets with Gaussian Process Noise</h3>
-  Our proposal is to specialize the stochastic reachability problem to when the continuous dynamics are deterministic control affine with an additive Gaussian process disturbance.
-  We will view reachability as a stochastic optimal control problem trying to maximize the expected value of staying within a safe set and use dynamic programming to solve.
-  By narrowing our problem focus, we hope to simplify the dynamic programming approach typical for stochastic optimal control and thereby produce a more tractable algorithm.
-  This particular sub-problem is relevant to control-affine dynamic systems (a ubiquitous system model) where the uncertain disturbance is modeled with a GP (a standard regression method).
-  We will be building on work performed by Akametalu, Fisac, et. al and presented at CDC 2014.
+    <h3>Probabilistic Reachability and Maximal Safe Sets with Gaussian Process Noise</h3>
+    <p>
+      Our proposal is to specialize the stochastic reachability problem to when the continuous dynamics are deterministic control affine with an additive Gaussian process disturbance.
+      We will view reachability as a stochastic optimal control problem trying to maximize the expected value of staying within a safe set and use dynamic programming to solve.
+      By narrowing our problem focus, we hope to simplify the dynamic programming approach typical for stochastic optimal control and thereby produce a more tractable algorithm.
+      This particular sub-problem is relevant to control-affine dynamic systems (a ubiquitous system model) where the uncertain disturbance is modeled with a GP (a standard regression method).
+      We will be building on work performed by Akametalu, Fisac, et. al and presented at CDC 2014.
+    </p>
 
-  <h3>Legibility of Cost Functionals</h3>
-  Legibility for inferring intent has exploded onto the HRI scene and made roboticists more seriously consider how human-interaction behaviors can arise from the mathematics.
-  In this work we wish to formalize a method for exaggerating which cost functional the robot is performing under to provide legibility for cost.
-  If a robot realizes one of its motors is busted, jammed, or otherwise highly damped, the robot can communicate its condition to a human observer just through cost-legibility optimization.
-  A warehouse robot charged with lifting boxes could communicate to a human supervisor the weight of its load, by exaggerating the added cost for lifting the box.
-  Robots can communicate impediments organically through trajectories through a method elegantly grounded in first principles.
+    <h3>Legibility of Cost Functionals</h3>
+    <p>
+      Legibility for inferring intent has exploded onto the HRI scene and made roboticists more seriously consider how human-interaction behaviors can arise from the mathematics.
+      In this work we wish to formalize a method for exaggerating which cost functional the robot is performing under to provide legibility for cost.
+      If a robot realizes one of its motors is busted, jammed, or otherwise highly damped, the robot can communicate its condition to a human observer just through cost-legibility optimization.
+      A warehouse robot charged with lifting boxes could communicate to a human supervisor the weight of its load, by exaggerating the added cost for lifting the box.
+      Robots can communicate impediments organically through trajectories through a method elegantly grounded in first principles.
+    </p>
+  </div>
+  <div class="light">
 
   <h2>On-Hold projects</h2>
 
@@ -64,7 +70,8 @@
     In this work we fuse these two interaction types to form manipulation via locomotion.
     We integrate classic work in manipulation into studies on collaborative robotic transport to add extra manipulation DOF to a delocalized robot "hand" made up of a team of mobile pushing robots.
     This work is being pursued with the <a href="https://robotics.eecs.berkeley.edu/~ronf/Biomimetics.html">Biomimetic Millisystems Lab</a> at Berkeley.
-
+  </div>
+  <div class="dark">
   <h2>Completed projects</h2>
 
   <h3>Fuzzy Logic for Controls Education Project</h3>
@@ -82,7 +89,7 @@
   <p>My LinkedIn page: <a href="https://www.linkedin.com/in/david-mcpherson-4bb96595">click here.</a></p>
 
   <footer id="foot01"></footer>
-  </div>
+</div>
 
 <script src="script.js"></script>
 
