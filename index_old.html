@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>David McPherson - Researcher</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<nav id="nav01"></nav>
+
+<body>
+
+  <div id="main">
+  <h1>David L. McPherson</h1>
+
+  <img src="Science David25.jpg" alt="selfie" style="width:50%;" align="right" hspace="20" vspace="20">
+
+  <h2>About me</h2>
+  <p>Top of the day to you!
+    My name's David McPherson and I'm a first year PhD student at UC Berkeley.
+    I study robotic systems integration, modeling, and control.
+    Two drives fuel my passion for robotics.
+    The first drive is robots' mythical nature. Robots have always had an uncanny ability to touch the imagination of mankind even stretching back to ancient Greece and automatons like Talos of Argonaut fame.
+
+    The second drive is robotics' broad interdisciplinary footprint.
+    It spans fields from cognitive science to material science, from mechanical design to interface design, from computer programming to electromagnetics to statistical learning theory to electrohydrodynamics!
+    Behind this motley mix of disparate fields lurks a hidden mathematical core that binds them together.
+    This wondrous ability for mathematics to unify the rainbow of scintillating fields is what I study.
+
+  <p>Between first year classes, I've had the pleasure of working with several of the brilliant faculty here at Berkeley.
+    I've gotten to experiment in each of their labs and sample the different delectible research questions and subfields each one investigates.
+    Although this means I don't accomplish as much on any one project, this breadth of labwork will afford powerful diversity in knowledge and allow me to puruse collaborative projects between the different labs.
+    I'm excited to be working with the <a href="http://hybrid.eecs.berkeley.edu">Hybrid Systems Lab</a> this semester.</p>
+
+  <h2>Current projects</h2>
+
+  <h3>Probabilistic Reachability and Maximal Safe Sets with Gaussian Process Noise</h3>
+  Our proposal is to specialize the stochastic reachability problem to when the continuous dynamics are deterministic control affine with an additive Gaussian process disturbance.
+  We will view reachability as a stochastic optimal control problem trying to maximize the expected value of staying within a safe set and use dynamic programming to solve.
+  By narrowing our problem focus, we hope to simplify the dynamic programming approach typical for stochastic optimal control and thereby produce a more tractable algorithm.
+  This particular sub-problem is relevant to control-affine dynamic systems (a ubiquitous system model) where the uncertain disturbance is modeled with a GP (a standard regression method).
+  We will be building on work performed by Akametalu, Fisac, et. al and presented at CDC 2014.
+
+  <h3>Legibility of Cost Functionals</h3>
+  Legibility for inferring intent has exploded onto the HRI scene and made roboticists more seriously consider how human-interaction behaviors can arise from the mathematics.
+  In this work we wish to formalize a method for exaggerating which cost functional the robot is performing under to provide legibility for cost.
+  If a robot realizes one of its motors is busted, jammed, or otherwise highly damped, the robot can communicate its condition to a human observer just through cost-legibility optimization.
+  A warehouse robot charged with lifting boxes could communicate to a human supervisor the weight of its load, by exaggerating the added cost for lifting the box.
+  Robots can communicate impediments organically through trajectories through a method elegantly grounded in first principles.
+
+  <h2>On-Hold projects</h2>
+
+    <h3>Generating Anticipatory Motion using Contrasting Examples</h3>
+    In human robot collaboration activities communication is of utmost import.
+    I build on work that uses channels for communication the robot already has at its disposal: how it animates through its configuration space.
+    Given exemplar trajectories that communicate whether the robot has condition A or condition B (e.g. heavy or light load), my algorithm attempts to extract what in the animation communicates condition A via contrast to condition B.
+    Knowing the communication cue for condition A, I can amplify and hasten that cue by deforming the trajectory according to trajectory optimization.
+    This research is in close collaboration with <a href="http://www.eecs.berkeley.edu/~anca/">Dr. Anca Dragan</a>.
+
+    <h3>Out of Plane Rolling via Simple Pushing Robot Team</h3>
+    As robots make the migratory leap from well-controlled factory cages into the rough-and-tumble of natural environments, a growing theme is physical interaction.
+    From one research direction, we examine how the robot interacts with the surrounding terrain to locomote.
+    From a complementary direction, we examine how to design robot hands or grippers to manipulate objects.
+    In this work we fuse these two interaction types to form manipulation via locomotion.
+    We integrate classic work in manipulation into studies on collaborative robotic transport to add extra manipulation DOF to a delocalized robot "hand" made up of a team of mobile pushing robots.
+    This work is being pursued with the <a href="https://robotics.eecs.berkeley.edu/~ronf/Biomimetics.html">Biomimetic Millisystems Lab</a> at Berkeley.
+
+  <h2>Completed projects</h2>
+
+  <h3>Fuzzy Logic for Controls Education Project</h3>
+  <p>Electrical engineering senior thesis project. Implemented Fuzzy Logic Controller (FLC) on FIRST Robotics Competition (FRC) platform available to local highschools with the goal of disemminating FLC knowledge to highschool students. Although not as mathematically tractable, fuzzy controllers are intuitive to design, making them a potentially useful introuction to feedback controls concepts.
+  This work was a proof-of-concept for implementing fuzzy controls with affordable sensors and standard educational hardware for highschools. Although an educational study demonstrating fuzzy controls efficacy as a gateway for controls study has yet to be performed, this work encourages FRC teams that implementing FLCs is feasible.</p>
+
+  <h3>IEEE Region 3 - Student Hardware Competition 2015</h3>
+  <p>Locomotion and navigation lead for student robot competition. Assembled and managed team for these two subsystems. Prototyped, tested, designed, assembled, and debugged hardware for locomotion resulting in an autonomous line following robot. Coded control system for locomotion and line following algorithm for navigation of a branching, twisting line with a series of pit stops.</p>
+
+  <h3>Precise Yaw Rotation and Stabilization using Closed Loop Control of Inertial Tail Actuators</h3>
+  <p>Built inertial "tail" actuator for millirobot and implemented a feedback controller with feedforward friction linearization in conjunction with Dr. Sarah Bergbreiter's <a href="https://sites.google.com/site/microroboticslaboratory">Maryland Microrobotics Laboratory</a> at University of Maryland.
+
+  <h2>Links</h2>
+  <p>My GitHub site: <a href="https://github.com/DavidMcPherson">click here.</a></p>
+  <p>My LinkedIn page: <a href="https://www.linkedin.com/in/david-mcpherson-4bb96595">click here.</a></p>
+
+  <footer id="foot01"></footer>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

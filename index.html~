@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>David's Home Page</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<nav id="nav01"></nav>
+
+<body>
+
+  <div id="main">
+  <h1>David Fridovich-Keil</h1>
+
+  <img src="me_formal.jpg" alt="selfie" style="width:50%;" align="right" hspace="20" vspace="20">
+  
+  <h2>About me</h2>
+  <p>Hi there! I'm a first year PhD student here at UC Berkeley, in the EECS department. My background is primarily in optics and signal processing, but of late I have started to specialize in image processing and computer vision. I did my undergrad in electrical engineering at Princeton.</p>
+
+  <p>Although I've been spending most of my time on classes, I'm really excited to have hit the ground running on a really interesting research project -- <b>Drone-based 3D reconstruction</b>. I am advised by Prof. Avideh Zakhor, and I work very closely with Erik Nelson, who is also a first year PhD student in the <a href="http://www-video.eecs.berkeley.edu">Video and Image Processing Lab</a>.</p>
+
+  <h2>Current projects</h2>
+
+  <h3>Drone-Based 3D Reconstruction</h3>
+  <p>Right now, I'm looking into drone-based 3D reconstruction. That's mouthful, though -- let me break it down. Basically, the high-level goal is to build a quadrotor system that can fly autonomously in an urban environment and collect enough data to build an accurate, high resolution, metric reconstruction.</p>
+
+  <p>There are three distinct parts of this project:</p>
+  <ul>
+    <li>Hardware design</li>
+    <li>Autonomous navigation and path planning</li>
+    <li>3D reconstruction</li>
+  </ul>
+
+  <p><b>Hardware design</b> is the first step. I've gone ahead and bought the brand new <a href="https://developer.dji.com/matrice-100/">DJI Matrice 100</a> with <a href="https://developer.dji.com/guidance/">Guidance</a>. This is a really great platform -- it's got state-of-the-art sensors and control, with what looks like a very extensive developer SDK. I'm really excited to start playing around with this!</p>
+
+  <p><b>Autonomous navigation and path planning</b> will be a necessary step for data acquisition. Right now, I haven't really done all that much on this, but I did just start a new GitHub repository, <a href="https://github.com/dfridovi/path_planning">path_planning</a>, and my hope is to make some progress on this over winter break.</p>
+
+  <p><b>3D reconstruction</b> is the real deliverable here. Once we have all the data, we've got to synthesize it all into a model. I've been working closely with Erik Nelson on an open-source large-scale structure from motion and SLAM library, <a href="http://erik-nelson.github.io/berkeley_sfm/">Berkeley SfM</a>. We've only been working on this for a couple months, though, so this is only just the beginning! Stay tuned for updates.</p>
+
+
+  <h2>On the back burner...</h2>
+
+  <h3>SimpleSFM</h3>
+  <p><a href="https://github.com/dfridovi/SimpleSFM">SimpleSFM</a> is my first stab at building a working structure from motion library. I use OpenCV for all keypoint extraction/matching and NumPy's built-in implementation of Levenberg-Marquardt optimization for bundle adjustment, but otherwise everything else is home-made. Right now, everything is in Python, and it only does keypoint triangulation and bundle adjustment (my test case achieves reprojection error on the order of a pixel). The next major commit will be dense stereo matching, so that the model output actually looks recognizable.</p>
+  
+  <h3>ImageLib</h3>
+  <p><a href="https://github.com/dfridovi/imagelib">imagelib</a> is my own repository for image processing and computer vision tasks. I'm pretty much just adding functionality that seems cool in no particular order. My general objective is to make something useful for both researchers and amateur photographers, so I'm trying to split my efforts between things like filtering and image enhancement and more complicated tasks like eye tracking. The library is written in Python, and I go to a lot of effort to write efficient, clean, well-documented code.</p>
+
+  <h3>Releveling</h3>
+  <p><a href="https://github.com/dfridovi/releveling">releveling</a> is on the backburner right now, but the general idea is to build my own set of audio editing functions, in the same spirit as <a href="https://github.com/dfridovi/imagelib">imagelib</a>. The name <i>releveling</i> comes from my original idea, which was to write a function to adjust the volume of a group of songs so that they all have roughly the same volume; that way, you won't have to keep adjusting the volume when you shuffle through your iTunes library.</p>
+
+  <h2>Completed projects</h2>
+
+  <h3>An Approach To Low-Cost Mobile Indoor Robotics Using an Edge Network Computing Paradigm</h3>
+  <p>Electrical engineering senior thesis project. Developed a system that empowers mobile robots with additional computational resources by borrowing CPU time from nearby computers on the local wireless network. Robots in the system perform complex computational tasks such as autonomous path planning and SLAM using only very minimal onboard processing. <a href="https://github.com/dfridovi/thesis">Here's</a> the code.</p>
+
+  <h3>Brown Robotics Olympiad</h3>
+  <p>Designed and built an autonomous maze-solving robot, based on the Pololu 3pi platform. Developed control algorithms to enable precise movements in confined area.</p>
+
+  <h3>iPhone Camera Auto-Navigating Robot</h3>
+  <p>Created auto-navigating rover. Attached iPhone to RC car, developed communication system to offload iPhone camera feed to a remote server and designed algorithm to process the iPhone camera feed and direct the car around obstacles. All computations performed in real time.</p>
+
+  <h2>Links</h2>
+  <p>My GitHub site: <a href="https://github.com/dfridovi">click here.</a></p>
+  <p>My LinkedIn page: <a href="https://www.linkedin.com/in/davidfridovichkeil">click here.</a></p>
+
+  <footer id="foot01"></footer>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
