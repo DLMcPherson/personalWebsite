@@ -82,8 +82,6 @@ ul#menu li a:hover {
     width: 100%;
 }
 
-/* =================================================== */
-
 .grn {
   padding: 60px;
   padding-left:  100px;
@@ -95,5 +93,12 @@ ul#menu li a:hover {
   padding: 60px;
   padding-left:  100px;
   padding-right: 100px;
+  background-color : #3E1007
+}
+
+.redViz {
+  padding: 0px;
+  padding-left:  0px;
+  padding-right: 0px;
   background-color : #3E1007
 }

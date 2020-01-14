@@ -4,6 +4,5 @@ document.getElementById("foot01").innerHTML =
 document.getElementById("nav01").innerHTML =
 "<ul id='menu'>" +
 "<li><a href='index.html'>Research</a></li>" +
-"<li><a href='Me.html'>Me</a></li>" +
-"<li><a href='cv.html'>CV</a></li>"
+"<li><a href='DavidMcPhersonCV5.pdf'>CV</a></li>"
 "</ul>";
